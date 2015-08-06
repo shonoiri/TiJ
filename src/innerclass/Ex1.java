@@ -6,17 +6,19 @@ initialize a reference to an Inner.
 */
 public class Ex1 {
 	public static void main(String [] args){
-		Outer outer = new Outer();
+		Ex1 ex1 = new Ex1();
+		Outer outer = ex1.new Outer();
 		outer.getInner();
 	}
 
-}
- class Outer{
+
+ private class Outer{
 	 public Inner getInner(){
 		 Inner inner = new Inner();
 		 return inner;
 	 }
-	public class Inner{
+	private class Inner{
 		 
 	 }
  }
+}

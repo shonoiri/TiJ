@@ -3,12 +3,13 @@ package innerclass;
 the inner class.*/
 public class Ex5 {
 	
-	class Inner{
+	private class Inner{
 		{System.out.println("Inner created");}
 	}
-}
 
-class Test{
+
+private class Test{
 	Ex5 ex5 = new Ex5();
 	Ex5.Inner inner = ex5.new Inner();
+}
 }
