@@ -3,6 +3,8 @@ package ex3;
 /*Exercise 3: (1) Write code to generate and catch an
 ArraylndexOutOfBoundsException.*/
 
+
+
 public class Ex3 {
 
 	public static void main(String[] args) {
