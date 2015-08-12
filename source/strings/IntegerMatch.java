@@ -1,3 +1,5 @@
+package strings;
+
 //: strings/IntegerMatch.java
 
 public class IntegerMatch {

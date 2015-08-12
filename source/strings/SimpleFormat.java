@@ -1,3 +1,5 @@
+package strings;
+
 //: strings/SimpleFormat.java
 
 public class SimpleFormat {

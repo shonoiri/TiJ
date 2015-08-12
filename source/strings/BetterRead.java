@@ -1,9 +1,13 @@
+package strings;
+
 //: strings/BetterRead.java
 import java.util.*;
 
 public class BetterRead {
-  public static void main(String[] args) {
-    Scanner stdin = new Scanner(SimpleRead.input);
+  private static Scanner stdin;
+
+public static void main(String[] args) {
+    stdin = new Scanner(SimpleRead.input);
     System.out.println("What is your name?");
     String name = stdin.nextLine();
     System.out.println(name);

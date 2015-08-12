@@ -1,3 +1,5 @@
+package typeinfo;
+
 //: typeinfo/ClassInitialization.java
 import java.util.*;
 
@@ -26,8 +28,9 @@ class Initable3 {
 
 public class ClassInitialization {
   public static Random rand = new Random(47);
+private static Class initable;
   public static void main(String[] args) throws Exception {
-    Class initable = Initable.class;
+    initable = Initable.class;
     System.out.println("After creating Initable ref");
     // Does not trigger initialization:
     System.out.println(Initable.staticFinal);
