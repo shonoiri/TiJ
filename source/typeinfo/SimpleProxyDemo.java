@@ -1,3 +1,5 @@
+package typeinfo;
+
 //: typeinfo/SimpleProxyDemo.java
 import static net.mindview.util.Print.*;
 
@@ -20,11 +22,17 @@ class SimpleProxy implements Interface {
   }
   public void doSomething() {
     print("SimpleProxy doSomething");
+    long start = System.nanoTime();
     proxied.doSomething();
+    long duration = System.nanoTime() - start;
+    print("Time " + duration);
   }
   public void somethingElse(String arg) {
     print("SimpleProxy somethingElse " + arg);
+    long start = System.nanoTime();
     proxied.somethingElse(arg);
+    long duration = System.nanoTime() - start;
+    print("Time " + duration);
   }
 }	
 
