@@ -12,6 +12,7 @@ import typeinfo.pets.Dog;
 // Using instanceof.
 
 import typeinfo.pets.ForNameCreator;
+import typeinfo.pets.Gerbil;
 import typeinfo.pets.Hamster;
 import typeinfo.pets.Manx;
 import typeinfo.pets.Mouse;
@@ -63,6 +64,8 @@ static class PetCounter extends HashMap<String,Integer> {
         counter.count("Mouse");
       if(pet instanceof Hamster)
         counter.count("Hamster");
+      if(pet instanceof Gerbil)
+    	counter.count("Gebril");    	  
     }
     // Show the counts:
     print();

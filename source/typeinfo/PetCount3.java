@@ -1,9 +1,18 @@
+package typeinfo;
+
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import net.mindview.util.MapData;
 //: typeinfo/PetCount3.java
 // Using isInstance()
-import typeinfo.pets.*;
-import java.util.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import typeinfo.pets.Integer;
+import typeinfo.pets.LiteralPetCreator;
+import typeinfo.pets.Pet;
+import typeinfo.pets.Pets;
 
 public class PetCount3 {
   static class PetCounter
