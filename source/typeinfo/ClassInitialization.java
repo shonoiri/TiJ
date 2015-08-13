@@ -38,7 +38,7 @@ private static Class initable;
     System.out.println(Initable.staticFinal2);
     // Does trigger initialization:
     System.out.println(Initable2.staticNonFinal);
-    Class initable3 = Class.forName("Initable3");
+    Class initable3 = Class.forName("typeinfo.Initable3");
     System.out.println("After creating Initable3 ref");
     System.out.println(Initable3.staticNonFinal);
   }

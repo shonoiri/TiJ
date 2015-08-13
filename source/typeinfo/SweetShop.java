@@ -1,13 +1,15 @@
+package typeinfo;
+
 //: typeinfo/SweetShop.java
 // Examination of the way the class loader works.
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 class Candy {
   static { print("Loading Candy"); }
 }
 
 class Gum {
-  static { print("Loading Gum"); }
+  static { print("Loading Gum"); }  
 }
 
 class Cookie {
@@ -19,8 +21,9 @@ public class SweetShop {
     print("inside main");
     new Candy();
     print("After creating Candy");
+    new Candy();
     try {
-      Class.forName("Gum");
+      Class.forName("typeinfo.Gum");
     } catch(ClassNotFoundException e) {
       print("Couldn't find Gum");
     }

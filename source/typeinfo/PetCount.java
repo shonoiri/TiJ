@@ -1,11 +1,30 @@
+package typeinfo;
+
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
+
+import java.util.HashMap;
+
+import typeinfo.pets.Cat;
+import typeinfo.pets.Dog;
+
 //: typeinfo/PetCount.java
 // Using instanceof.
-import typeinfo.pets.*;
-import java.util.*;
-import static net.mindview.util.Print.*;
+
+import typeinfo.pets.ForNameCreator;
+import typeinfo.pets.Hamster;
+import typeinfo.pets.Manx;
+import typeinfo.pets.Mouse;
+import typeinfo.pets.Mutt;
+import typeinfo.pets.Pet;
+import typeinfo.pets.PetCreator;
+import typeinfo.pets.Pug;
+import typeinfo.pets.Rat;
+import typeinfo.pets.Rodent;
 
 public class PetCount {
-  static class PetCounter extends HashMap<String,Integer> {
+  @SuppressWarnings("serial")
+static class PetCounter extends HashMap<String,Integer> {
     public void count(String type) {
       Integer quantity = get(type);
       if(quantity == null)

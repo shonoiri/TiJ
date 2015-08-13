@@ -6,6 +6,7 @@ import static net.mindview.util.Print.*;
 interface HasBatteries {}
 interface Waterproof {}
 interface Shoots {}
+interface Cool{}
 
 class Toy {
   // Comment out the following default constructor
@@ -15,7 +16,7 @@ class Toy {
 }
 
 class FancyToy extends Toy
-implements HasBatteries, Waterproof, Shoots {
+implements HasBatteries, Waterproof, Shoots,Cool {
   FancyToy() { super(1); }
 }
 
@@ -25,6 +26,7 @@ public class ToyTest {
       " is interface? [" + cc.isInterface() + "]");
     print("Simple name: " + cc.getSimpleName());
     print("Canonical name : " + cc.getCanonicalName());
+    print("Superclass : " + cc.getSuperclass());
   }
   public static void main(String[] args) {
     Class c = null;
