@@ -12,11 +12,15 @@ class DynamicProxyHandler implements InvocationHandler {
   invoke(Object proxy, Method method, Object[] args)
   throws Throwable {
     System.out.println("**** proxy: " + proxy.getClass() +
-      ", method: " + method + ", args: " + args);
+     ", args: " + args);
     if(args != null)
       for(Object arg : args)
         System.out.println("  " + arg);
-    return method.invoke(proxied, args);
+    long start = System.nanoTime();
+    Object ret = method.invoke(proxied, args);
+    long duration = System.nanoTime() - start;
+    System.out.println("METHOD-CALL TIME: " + duration);
+    return ret;
   }
 }	
 
@@ -31,7 +35,7 @@ class SimpleDynamicProxy {
     // Insert a proxy and call again:
     Interface proxy = (Interface)Proxy.newProxyInstance(
       Interface.class.getClassLoader(),
-      new Class[]{ Interface.class },
+      new Class<?>[]{ Interface.class },
       new DynamicProxyHandler(real));
     consumer(proxy);
   }

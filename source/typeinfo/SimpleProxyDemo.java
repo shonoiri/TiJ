@@ -10,8 +10,11 @@ interface Interface {
 
 class RealObject implements Interface {
   public void doSomething() { print("doSomething"); }
+  long start = System.nanoTime();
   public void somethingElse(String arg) {
     print("somethingElse " + arg);
+  long finish = System.nanoTime() - start;
+  print("Time " + finish);
   }
 }	
 
