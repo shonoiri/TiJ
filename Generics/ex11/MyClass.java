@@ -5,7 +5,6 @@ work properly with them.*/
 
 import java.util.List;
 import java.util.Queue;
-
 import net.mindview.util.New;
 import net.mindview.util.ThreeTuple;
 import net.mindview.util.TwoTuple;
