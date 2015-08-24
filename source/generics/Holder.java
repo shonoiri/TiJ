@@ -1,3 +1,5 @@
+package generics;
+
 //: generics/Holder.java
 
 public class Holder<T> {
@@ -9,6 +11,8 @@ public class Holder<T> {
   public boolean equals(Object obj) {
     return value.equals(obj);
   }	
+  class Fruit{}
+  class Apple extends Fruit{}
   public static void main(String[] args) {
     Holder<Apple> Apple = new Holder<Apple>(new Apple());
     Apple d = Apple.get();

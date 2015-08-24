@@ -1,7 +1,12 @@
-//: generics/ThrowGenericException.java
-import java.util.*;
+package generics;
 
-interface Processor<T,E extends Exception> {
+//: generics/ThrowGenericException.java
+import java.util.ArrayList;
+import java.util.List;
+
+import ex4.MyException;
+
+interface Processor<T,E extends Exception, MyException> {
   void process(List<T> resultCollector) throws E;
 }
 
@@ -16,6 +21,12 @@ extends ArrayList<Processor<T,E>> {
 }	
 
 class Failure1 extends Exception {}
+class Failure2 extends MyException{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;}
 
 class Processor1 implements Processor<String,Failure1> {
   static int count = 3;
