@@ -3,7 +3,8 @@ package generics;
 //: generics/TupleTest2.java
 import net.mindview.util.*;
 import static net.mindview.util.Tuple.*;
-import ex3.SixTuple;
+
+import ex03.SixTuple;
 
 public class TupleTest2 {
 	static TwoTuple<String, Integer> f() {

@@ -2,7 +2,7 @@
 // Tuple library using type argument inference.
 package net.mindview.util;
 
-import ex3.SixTuple;
+import ex03.SixTuple;
 
 public class Tuple {
 	public static <A, B> TwoTuple<A, B> tuple(A a, B b) {
