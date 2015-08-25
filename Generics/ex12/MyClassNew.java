@@ -1,11 +1,11 @@
 package ex12;
 
 /*Exercise 12: (1) Repeat the previous exercise using explicit type specification.*/
-
-import java.util.*;
+import java.util.List;
+import java.util.Set;
+import ex03.SixTuple;
+import ex04.Sequence;
 import net.mindview.util.New;
-import ex3.SixTuple;
-import ex4.Sequence;
 
 public class MyClassNew {
 	static void f(List<SixTuple<Byte, Short, String, Float, Double, Integer>> l) {
