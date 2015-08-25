@@ -1,8 +1,11 @@
+package generics;
+
 //: generics/FactoryConstraint.java
 
 interface FactoryI<T> {
   T create();
 }
+
 
 class Foo2<T> {
   private T x;
