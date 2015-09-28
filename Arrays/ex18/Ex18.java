@@ -1,5 +1,4 @@
 package ex18;
-
 /*Exercise 18: (3) Create and fill an array of BerylliumSphere. Copy this array to a new
 array and show that it’s a shallow copy.*/
 
@@ -9,7 +8,7 @@ import arrays.BerylliumSphere;
 
 public class Ex18 {
 	public static void main(String[] args) {
-		BerylliumSphere [] array = new BerylliumSphere [9];
+		BerylliumSphere[] array = new BerylliumSphere[9];
 		Arrays.fill(array, new BerylliumSphere());
 		System.out.println(Arrays.toString(array));
 		BerylliumSphere[] newArray = new BerylliumSphere[16];

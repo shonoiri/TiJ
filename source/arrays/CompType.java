@@ -1,3 +1,5 @@
+package arrays;
+
 //: arrays/CompType.java
 // Implementing Comparable in a class.
 import java.util.*;
