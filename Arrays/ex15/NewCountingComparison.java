@@ -12,17 +12,6 @@ import java.util.List;
 
 import arrays.BerylliumSphere;
 import net.mindview.util.Generated;
-import net.mindview.util.Generator;
-
-class BSGenerator implements Generator<BerylliumSphere>{
-
-	@Override
-	public BerylliumSphere next() {
-		BerylliumSphere bs = new BerylliumSphere();
-		return bs;
-	}
-	
-}
 
 public class NewCountingComparison {
 
