@@ -2,22 +2,6 @@ package ex19;
 
 import java.util.Arrays;
 
-class MyClass{
-	protected int i;
-	public MyClass(int i) {
-		this.i = i;
-	}
-}
-
-class NewMyClass extends MyClass{
-	
-	public NewMyClass(int i) {
-		super(i);
-	}
-	public boolean equals(Object o){
-		return o instanceof NewMyClass && i ==((MyClass)o).i; 
-	}
-}
 public class ex19 {
 
 	public static void main(String[] args) {
